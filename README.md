@@ -8,17 +8,4 @@
 ![image](./structure.png)
 **Figure:** *The sturcture of the AutoML model.*
 
-This is the repository for 2021 Spring Computer Vision course project, which implements a compact application to do real image editing. Our application takes advantage of pre-trained GANs and corresponding inversion models. Taking only one pair of images as input, it can find user-defined semantic directions efficiently and with high accuracy, compared with previous approaches. These directions can then be applied on inverted latent codes and editing certain semantics of real images. See final report [there](./finalreport.pdf).
-
-The application is implemented mainly on StyleGAN2 and [FFHQ](https://github.com/NVlabs/ffhq-dataset), the inversion model we use is the [in-domain](https://github.com/genforce/idinvert_pytorch) inversion model.
-
-## Let's play!
-
-To play with our application, just clone this repository to your machine and run the following bash:
-```bash
-streamlit run interface.py
-```
-The application will download the pre-trained GAN and inversion model automatically, then one can edit their own real images on either pre-determined or user-specified semantics.
-
-![image](./interface.png)
-**Figure:** *The main interface of our application, which is implemented by streamlit*
+This is the repository for 2020 Fall Data mining course project, which proposes a practical scheme to do automated machine learning for graph-structured data. There are several parts in our scheme: Feature processing selects important features from the raw feature table and directly encodes edge information into input. Model selection which compares different networks’ performance on the validation set and selects the best network with certain parameters to do further training. Model training trains the selected network with full data set and do weighted ensemble. A time controller is used to balance time used in all three parts(0.2, 0.6, 0.2 of total time for each part), which guarantees the model return the prediction of test nodes within the time budget. See final report [there](./FinalReport.pdf).
