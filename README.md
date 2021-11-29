@@ -6,9 +6,9 @@
 ![hyperopt 0.2.5](https://img.shields.io/badge/hyperopt-0.2.5-green.svg?style=plastic)
 
 ![image](./structure.png)
-**Figure:** *The sturcture of the AutoML model. *
+**Figure:** *The sturcture of the AutoML model.*
 
-This is the repository for 2021 Spring Computer Vision course project, which implements a compact application to do real image editing. Our application takes advantage of pre-trained GANs and corresponding inversion models. Taking only one pair of images as input, it can find user-defined semantic directions efficiently and with high accuracy, compared with previous approaches. These directions can then be applied on inverted latent codes and editing certain semantics of real images. See final report [there](./CV_FinalReport_Direction_in_GAN_Latent_Space.pdf).
+This is the repository for 2021 Spring Computer Vision course project, which implements a compact application to do real image editing. Our application takes advantage of pre-trained GANs and corresponding inversion models. Taking only one pair of images as input, it can find user-defined semantic directions efficiently and with high accuracy, compared with previous approaches. These directions can then be applied on inverted latent codes and editing certain semantics of real images. See final report [there](./finalreport.pdf).
 
 The application is implemented mainly on StyleGAN2 and [FFHQ](https://github.com/NVlabs/ffhq-dataset), the inversion model we use is the [in-domain](https://github.com/genforce/idinvert_pytorch) inversion model.
 
